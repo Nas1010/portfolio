@@ -167,12 +167,12 @@ section {
   height: 80vh;
 }
 
-/* .section__pic-container {
+.section__pic-container {
   display: flex;
   height: 400px;
-  width: 400px;
+  width: 450px;
   margin: auto 0;
-} */
+}
 
 .section__text {
   align-self: center;
@@ -216,6 +216,8 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
+  /* flex-direction: row; */
+  align-items: center;
   gap: 1rem;
 }
 
@@ -312,4 +314,44 @@ section {
 
 #experience {
   position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+article.icon {
+  cursor: default;
+}
+
+.experience-title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
 }
