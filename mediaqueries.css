@@ -38,7 +38,7 @@
     height: 75px;
     margin: 0 auto 2rem;
   }
-  .about-conatiners {
+  .about-containers {
     margin-top: 0;
   }
 }
@@ -59,7 +59,7 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-conatiners,
+  .about-conatainers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
@@ -100,7 +100,7 @@
 
 /* Hide hamburger-nav on larger screens */
 
-@media screen and (min-width: 1201px) {
+/* @media screen and (min-width: 1201px) {
   #desktop-nav {
     display: flex;
   }
@@ -108,4 +108,4 @@
   #hamburger-nav {
     display: none;
   }
-}
+} */
