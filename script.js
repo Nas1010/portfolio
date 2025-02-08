@@ -4,5 +4,3 @@ function toggleMenu() {
   menu.classList.toggle("open")
   icon.classList.toggle("open")
 }
-
-console.log("Screen width:", window.innerWidth)
