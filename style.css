@@ -70,8 +70,10 @@ a:hover {
 }
 
 .hamburger-menu {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .hamburger-icon {
@@ -165,6 +167,22 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+}
+
+.profile__pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.profile__pic-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 400px;
 }
 
 .section__pic-container {
@@ -304,12 +322,6 @@ section {
   height: 80%;
 }
 
-/* .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-} */
-
 /* Experience Section*/
 
 #experience {
@@ -327,6 +339,7 @@ section {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2.5rem;
 }
 

@@ -12,7 +12,7 @@
   #desktop-nav {
     display: none;
   }
-  .hamburger-nav {
+  #hamburger-nav {
     display: flex;
   }
   #experience,
@@ -100,7 +100,7 @@
 
 /* Hide hamburger-nav on larger screens */
 
-/* @media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
   #desktop-nav {
     display: flex;
   }
@@ -108,4 +108,28 @@
   #hamburger-nav {
     display: none;
   }
-} */
+}
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  .profile__pic-container {
+    max-width: 150px;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .profile__pic-container {
+    max-width: 120px;
+  }
+}
+
+/* Ensure Section Layout Adjusts */
+@media screen and (max-width: 600px) {
+  .section__pic-container {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    justify-content: center;
+  }
+}
