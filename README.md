@@ -19,7 +19,13 @@ JavaScript - For interactive elements like the hamburger menu and animations.
 
 # Installation
 
-Clone this repository:
+Clone this repository: git clone git@github.com:Nas1010/portfolio.git
+Navigate to the project folder: cd portfolio
+Open the project: Live Server using index.html
+
+# Deployment
+
+Vercel: portfolio-pied-one-37.vercel.app
 
 # Project Structure
 

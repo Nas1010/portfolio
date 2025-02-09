@@ -98,7 +98,7 @@
   }
 }
 
-/* Hide hamburger-nav on larger screens */
+/* Hides hamburger-nav on larger screens */
 
 @media screen and (min-width: 1201px) {
   #desktop-nav {
