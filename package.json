@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio made using Javascript, HTML and CSS. Portfolio This is my personal portfolio built using HTML, CSS, and JavaScript. It showcases my skills, projects, and experience as a Junior Fullstack Developer. This portfolio is designed to be responsive and user-friendly.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nas1010/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nas1010/portfolio/issues"
+  },
+  "homepage": "https://github.com/Nas1010/portfolio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
