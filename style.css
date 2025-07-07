@@ -371,9 +371,10 @@ article.icon {
 
 /* Projects section */
 
-.carousel-wrapper {
-  overflow: visible;
-}
+ .carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+} 
 
 .carousel-track::-webkit-scrollbar {
   display: none;
@@ -411,15 +412,11 @@ article.icon {
 .carousel-project-img {
   width: 20%;
   height: auto;
-  display: block; /* removes extra space under images */
-  object-fit: cover; /* or contain depending on desired cropping */
+  display: block; 
+  object-fit: cover; 
 }
 
-.carousel-btn {
-  margin-top: 1rem;
-}
-
-.carousel-btn {
+#projects .carousel-btn {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -427,27 +424,31 @@ article.icon {
   background-color: white;
   border: 2px solid black;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1000;
   padding: 0.5rem 1rem;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: background 0.3s;
+  transition: background 0.3s, opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.carousel-btn.prev {
+#projects .carousel-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#projects .carousel-btn.prev {
   left: 0.5rem;
-  transform: translateY(-50%);
 }
 
-.carousel-btn.next {
-  right: 1rem;
-  transform: translateY(-50%);
+#projects .carousel-btn.next {
+  right: 0.5rem;
 }
-
 
 .carousel-btn:hover {
   background-color: #f2f2f2;
-}
+} 
 
 
 /* Contact Page */
