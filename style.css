@@ -395,8 +395,6 @@ article.icon {
   box-sizing: border-box;
 }
 
-
-
 .carousel-track {
   display: flex;
   gap: 2.5rem; 
@@ -412,10 +410,9 @@ article.icon {
   transform: scale(1.03);
 }
 
-
 .project-img {
-  width: 100%;       /* or try 110% for a "slightly bigger" feel */
-  max-width: 200px;  /* optional: increase this as needed */
+  width: 100%;      
+  max-width: 200px; 
   height: auto;
   display: block;
   margin: 0 auto;
