@@ -126,7 +126,6 @@
       <h1 class="experience-title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <!-- <div class="details-container"> -->
             </div>
             <div class="details-container">
             <h2 class="experience-sub-title">Fullstack Skills</h2>
@@ -254,14 +253,19 @@
       onclick="location.href='./#projects'"
       />
     </section>
+
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
 
-      <div class="experience-details-container">
+     <div class="carousel-wrapper">
+    <button class="carousel-btn prev">&#10094;</button>
+
+    <div class="carousel-track" id="carousel">
+  
         
-        <div class="about-containers">
-        <div class="details-container color-container">
+      <div class="carousel-details-container color-container">
           <div class="article-container">
             <img src="./assets/project-1.png"
             alt="Project 1" 
@@ -269,7 +273,7 @@
             />
           </div>
           <h2 class="experience-sub-title project-title">Quiz App</h2>
-          <div class="btn-container">
+          <div class="carousel-btn-container">
             <button 
              class="btn btn-color-2 project-btn" 
              onclick="location.href='https://github.com/Nas1010/quiz-app'"
@@ -279,7 +283,7 @@
           </div>
         </div>
 
-        <div class="details-container color-container">
+        <div class="carousel-details-container color-container">
           <div class="article-container">
             <img src="./assets/project-2.png"
             alt="Project 2" 
@@ -287,7 +291,7 @@
             />
           </div>
           <h2 class="experience-sub-title project-title">Portfolio</h2>
-          <div class="btn-container">
+          <div class="carousel-btn-container">
             <button 
              class="btn btn-color-2 project-btn" 
              onclick="location.href='https://github.com/Nas1010/portfolio'"
@@ -297,7 +301,7 @@
           </div>
         </div>
 
-        <div class="details-container color-container">
+        <div class="carousel-details-container color-container">
           <div class="article-container">
             <img src="./assets/movie-api-project-3.png"
             alt="Project 3" 
@@ -305,7 +309,7 @@
             />
           </div>
           <h2 class="experience-sub-title project-title">Movie API</h2>
-          <div class="btn-container">
+          <div class="carousel-btn-container">
             <button 
              class="btn btn-color-2 project-btn" 
              onclick="location.href='https://github.com/Nas1010/react-movie-api'"
@@ -315,7 +319,7 @@
           </div>
         </div>
 
-        <div class="details-container color-container">
+        <div class="carousel-details-container color-container">
           <div class="article-container">
             <img src="./assets/project-4.png"
             alt="Project 4" 
@@ -323,7 +327,7 @@
             />
           </div>
           <h2 class="experience-sub-title project-title">Shelf Life</h2>
-          <div class="btn-container">
+          <div class="carousel-btn-container">
             <button 
              class="btn btn-color-2 project-btn" 
              onclick="location.href='https://github.com/Nas1010/chris-meah'"
@@ -333,7 +337,7 @@
           </div>
         </div>
 
-        <div class="details-container color-container">
+        <div class="carousel-details-container color-container">
           <div class="article-container">
             <img src="./assets/project-5.png"
             alt="Project 5" 
@@ -341,7 +345,7 @@
             />
           </div>
           <h2 class="experience-sub-title project-title">Portfolio Contest</h2>
-          <div class="btn-container">
+          <div class="carousel-btn-container">
             <button 
              class="btn btn-color-2 project-btn" 
              onclick="location.href='https://github.com/Nas1010/Shelf-Life?tab=readme-ov-file'"
@@ -350,8 +354,34 @@
             </button>
           </div>
         </div>
+
+
+        <div class="carousel-details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-6.png"
+            alt="Project 6" 
+            class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Python Calculator</h2>
+          <div class="carousel-btn-container">
+            <button 
+             class="btn btn-color-2 project-btn" 
+             onclick="location.href='https://github.com/Nas1010/python-calculator'"
+             >
+              GitHub
+            </button>
+          </div>
+        </div>
+
+
       </div>
+        <button class="carousel-btn next">&#10095;</button>
+      <!-- </div>
+    
+      </div> -->
       </div>
+   
       <img src="./assets/arrow.png"
       alt="Arrow icon"
       class="icon arrow"

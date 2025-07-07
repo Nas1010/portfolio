@@ -371,30 +371,83 @@ article.icon {
 
 /* Projects section */
 
-#projects {
-  position: relative;
+.carousel-wrapper {
+  overflow: visible;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-details-container {
+  flex: 0 0 auto;
+  width: 250px; 
+  height: 550px;
+  scroll-snap-align: start;
   background: rgb(250, 250, 250);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+.carousel-track {
+  display: flex;
+  gap: 2.5rem; 
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  scrollbar-width: none;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
+
+.carousel-details-container:hover {
+  transform: scale(1.03);
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-} */
+.carousel-project-img {
+  width: 20%;
+  height: auto;
+  display: block; /* removes extra space under images */
+  object-fit: cover; /* or contain depending on desired cropping */
+}
+
+.carousel-btn {
+  margin-top: 1rem;
+}
+
+.carousel-btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.carousel-btn.prev {
+  left: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.carousel-btn.next {
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+
+.carousel-btn:hover {
+  background-color: #f2f2f2;
+}
 
 
 /* Contact Page */
