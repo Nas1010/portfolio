@@ -33,9 +33,17 @@ observer.observe(projectsSection);
 const scrollAmount = 320;
 
 nextBtn.addEventListener('click', () => {
-  carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 1) {
+    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
 });
 
 prevBtn.addEventListener('click', () => {
-  carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  if (carousel.scrollLeft <= 0) {
+    carousel.scrollTo({ left: carousel.scrollWidth, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  }
 });
