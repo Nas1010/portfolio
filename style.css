@@ -382,6 +382,7 @@ article.icon {
 
 .carousel-details-container {
   flex: 0 0 auto;
+  text-align: center;
   width: 250px; 
   height: 550px;
   scroll-snap-align: start;
@@ -393,6 +394,8 @@ article.icon {
   overflow: hidden;
   box-sizing: border-box;
 }
+
+
 
 .carousel-track {
   display: flex;
@@ -409,11 +412,13 @@ article.icon {
   transform: scale(1.03);
 }
 
-.carousel-project-img {
-  width: 20%;
+
+.project-img {
+  width: 100%;       /* or try 110% for a "slightly bigger" feel */
+  max-width: 200px;  /* optional: increase this as needed */
   height: auto;
-  display: block; 
-  object-fit: cover; 
+  display: block;
+  margin: 0 auto;
 }
 
 #projects .carousel-btn {
@@ -439,11 +444,11 @@ article.icon {
 }
 
 #projects .carousel-btn.prev {
-  left: 0.5rem;
+  left: 5rem;
 }
 
 #projects .carousel-btn.next {
-  right: 0.5rem;
+  right: 5rem;
 }
 
 .carousel-btn:hover {
